@@ -9,3 +9,7 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.plugin-icon {
+  margin-right: 5px;
+}
