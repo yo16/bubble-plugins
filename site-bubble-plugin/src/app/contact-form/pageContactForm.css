@@ -1,0 +1,8 @@
+.required-field {
+    background-color: #f66;
+    color: #ccc;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #a00;
+}

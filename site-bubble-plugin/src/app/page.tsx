@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+
+import PageHeaderTitle from "@/components/PageHeaderTitle";
+
 import "./pageHome.css";
 
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
@@ -9,16 +12,12 @@ const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
 export default function Home() {
     return (
         <>
-            <div
-                className="header-container"
-            >
-                <h1>Bubble plugins</h1>
-                <div
-                    className="header-text"
-                >
-                    A showcase and store for plugins built for Bubble.
-                </div>
-            </div>
+            <PageHeaderTitle
+                title="Bubble plugins"
+                description={{
+                    text: "A showcase and store for plugins built for Bubble.",
+                }}
+            />
 
             <div
                 className="plugin-container"

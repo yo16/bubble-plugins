@@ -1,0 +1,39 @@
+
+.description-section {
+    margin-bottom: 50px;
+}
+
+.description-sub-section {
+    margin-left: 20px;
+}
+
+.description-section li {
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.description-section h2 {
+    background-color: #ddf;
+    padding: 10px;
+}
+
+.description-section h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #ddf;
+}
+
+.description-section h3 {
+    position: relative;
+    background-color: #f0f0ff;
+    padding: 10px 10px 10px 20px;
+    font-weight: normal;
+}
+
+.description-sub-section ol {
+    margin: 0px;
+}
