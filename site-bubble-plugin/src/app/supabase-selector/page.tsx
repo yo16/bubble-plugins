@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 export default function SupabaseSelector() {
-    const pluginMarketplaceLink = "https://bubble.io/plugin/supabase-selector";
+    const pluginMarketplaceLink = "https://bubble.io/plugin/supabase-selector-1749956409055x929758356949958700";
     const demoAppLiveLink = "https://plugins-demo-small-piece.bubbleapps.io/supabase-selector";
     const demoAppEditorLink = "https://bubble.io/page?type=page&name=supabase-selector&id=plugins-demo-small-piece&tab=tabs-1";
 
