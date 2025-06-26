@@ -10,7 +10,6 @@ DescriptionSectionだとシンプルすぎて表現できないので、専用�
 import Image from "next/image";
 import Link from "next/link";
 
-import "./DescriptionSection.css";
 import "./UsageSection.css";
 
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
@@ -49,9 +48,9 @@ export const UsageSection = (
             title: "1. Configuration: Add the Plugin",
             stepDescriptions: [
                 "Install the plugin.",
-                (<>Enter your Supabase project ID into <span className='strong'>"supabase_project_id"</span>.</>),
+                (<>Enter your Supabase project ID into <span className='strong'>{`"supabase_project_id"`}</span>.</>),
                 (<>
-                    Enter your Supabase anon key into <span className='strong'>"supabase_anon_key"</span>.
+                    Enter your Supabase anon key into <span className='strong'>{`"supabase_anon_key"`}</span>.
                     <br />
                     For more about the anon key, see <Link href='https://supabase.com/docs/guides/api/api-keys' target='_blank'>here<ExternalLinkIcon /></Link>.
                 </>),
@@ -93,9 +92,9 @@ export const UsageSection = (
                                 <tr><th>Field</th><th>Description</th><th>Example</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td><code>key</code></td><td>Column name (string)</td><td><code>"age"</code></td></tr>
-                                <tr><td><code>op</code></td><td>Operator</td><td><code>"eq"</code>, <code>"gt"</code>, <code>"lt"</code></td></tr>
-                                <tr><td><code>value</code></td><td>Value to compare</td><td><code>"Alice"</code>, <code>30</code></td></tr>
+                                <tr><td><code>key</code></td><td>Column name (string)</td><td><code>{`"age"`}</code></td></tr>
+                                <tr><td><code>op</code></td><td>Operator</td><td><code>{`"eq"`}</code>, <code>{`"gt"`}</code>, <code>{`"lt"`}</code></td></tr>
+                                <tr><td><code>value</code></td><td>Value to compare</td><td><code>{`"Alice"`}</code>, <code>{`30`}</code></td></tr>
                             </tbody>
                         </table>
                         <strong>Example:</strong>
@@ -107,7 +106,7 @@ export const UsageSection = (
                         </pre>
                     </div>
                 </>),
-                (<>Choose whether to escape double quotes (<code>\"</code>) in the returned value.</>),
+                (<>Choose whether to escape double quotes (<code>\{'"'}</code>) in the returned value.</>),
                 (<>
                     The plugin returns a list of strings. Each string is a JSON object (1 record from Supabase).<br />
                     <div

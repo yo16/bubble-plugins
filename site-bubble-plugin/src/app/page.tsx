@@ -1,22 +1,33 @@
-"use client";
+/*
+Top Page
 
+*/
+
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-import PageHeaderTitle from "@/components/PageHeaderTitle";
+import { PageHeaderTitle } from "@/components/PageHeaderTitle";
 
 import "./pageHome.css";
 
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
+
+export const metadata: Metadata = {
+    title: "Bubble plugins by Small Piece",
+    description: "A showcase and store for plugins built for Bubble by Small Piece.",
+};
 
 export default function Home() {
     return (
         <>
             <PageHeaderTitle
                 title="Bubble plugins"
-                description={{
-                    text: "A showcase and store for plugins built for Bubble.",
-                }}
+                descriptions={[
+                    {
+                        text: "A showcase and store for plugins built for Bubble.",
+                    }
+                ]}
             />
 
             <div

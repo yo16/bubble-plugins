@@ -13,13 +13,14 @@ interface PageHeaderTitleProps {
         width: number;
         height: number;
     };
-    description: {
+    descriptions?: {
+        icon?: string;
         text: string;
         link?: string;
-    };
+    }[];
 }
 
-export default function PageHeaderTitle({ title, image, description }: PageHeaderTitleProps) {
+export function PageHeaderTitle({ title, image, descriptions }: PageHeaderTitleProps) {
     return (
         <div className="top-header-section">
             <h1>
@@ -33,14 +34,16 @@ export default function PageHeaderTitle({ title, image, description }: PageHeade
                 />)}
                 {title}
             </h1>
-            <div>
-            {description.link && (
-                <Link href={description.link}>{description.text}</Link>
-            )}
-            {!description.link && (
-                <div className="header-text">{description.text}</div>
-            )}
-            </div>
+            {descriptions && descriptions.map((description, index) => (
+                <div className="header-text" key={index}>
+                    {description.icon && <span className="icon">{description.icon}</span>}
+                    {description.link ? (
+                        <Link href={description.link} target="_blank">{description.text}</Link>
+                    ) : (
+                        <>{description.text}</>
+                    )}
+                </div>
+            ))}
         </div>
     );
 }
