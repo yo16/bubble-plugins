@@ -90,7 +90,7 @@ export default function SupabaseSelector() {
                           "- We aim to respond to all inquiries within 24-48 business hours.\n"+
                           "- When reporting a bug, please include as much detail as possible, such as screenshots, error messages, and the steps to reproduce the issue.",
                         "**Documentation:** For comprehensive guidance on how to set up and use our plugin, please refer to the **\"Plugin Configuration and Usage\" section located above on this page.**\n" +
-                          "- For a deeper dive into the exact configurations and workflows, you can also explore the **Editor view of our demo application** [here](${demoAppEditorLink}).\n" +
+                          `- For a deeper dive into the exact configurations and workflows, you can also explore the **Editor view of our demo application** [here](${demoAppEditorLink}).\n` +
                           "- This documentation and the demo editor are regularly updated to reflect the latest plugin features and improvements.",
                     ]}
                     footerText="We are committed to providing reliable support to ensure a smooth experience with our plugin."
