@@ -68,7 +68,7 @@ export const UsageSection = (
                 (<>Add an action (<strong>Data(Things) &gt; Insert Row</strong>).</>),
                 (<>Enter the table name into <strong>table_name</strong>. Dynamic value is also supported, same as other fields.</>),
                 (<>
-                    Enter the record(s) to insert into the <strong>""record_json"</strong> field in JSON format.<br />
+                    Enter the record(s) to insert into the <strong>record_json</strong> field in JSON format.<br />
                     <div
                         style={{
                             fontSize: "0.85em",
