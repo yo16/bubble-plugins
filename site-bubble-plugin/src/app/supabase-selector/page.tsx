@@ -32,7 +32,7 @@ export default function SupabaseSelector() {
                 <PageHeaderTitle
                     title="Supabase Selector"
                     image={{
-                        path: `${imageBasePath}/supabase-brand-assets/supabase-logo-icon.svg`,
+                        path: `${imageBasePath}/icon_sb.png`,
                         alt: "Supabase",
                         width: 24,
                         height: 24,

@@ -1,0 +1,29 @@
+.usage-table {
+    border: 1px solid #eee;
+    margin: 2px 0 2px 0;
+}
+.usage-table th, .usage-table td {
+    padding: 6px 16px 6px 2px;
+}
+.usage-table th {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+.usage-table td {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgba(13, 13, 13, 0.05);
+    background-color: #fff;
+}
+.note-list {
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.note-list ul {
+    margin-left: 0;
+}
+.note-list ul li {
+    margin-bottom: 0;
+}

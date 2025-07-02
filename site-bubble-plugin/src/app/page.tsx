@@ -41,7 +41,7 @@ export default function Home() {
                             href="/supabase-selector"
                         >
                             <Image
-                                src={`${imageBasePath}/supabase-brand-assets/supabase-logo-icon.svg`}
+                                src={`${imageBasePath}/icon_sb.png`}
                                 alt="Supabase"
                                 width={24}
                                 height={24}
@@ -56,6 +56,31 @@ export default function Home() {
                         <li><strong>Streamlined simplicity</strong>: No unneeded features.</li>
                         <li><strong>No extra cost</strong>: Avoids unnecessary costs.</li>
                         <li><strong>Use case</strong>: Read Supabase data from other systems.</li>
+                    </ul>
+                </div>
+                <div
+                    className="plugin-card"
+                >
+                    <h2>
+                        <Link
+                            href="/supabase-inserter"
+                        >
+                            <Image
+                                src={`${imageBasePath}/icon_sb.png`}
+                                alt="Supabase"
+                                width={24}
+                                height={24}
+                                className="plugin-icon"
+                            />
+                            Supabase Inserter
+                            <span style={{fontWeight: "normal"}}> - Focus on Simple Data Retrieval</span>
+                        </Link>
+                    </h2>
+                    <ul>
+                        <li><strong>Insert only</strong>: No unnecessary functions.</li>
+                        <li><strong>Streamlined simplicity</strong>: No unneeded features.</li>
+                        <li><strong>No extra cost</strong>: Avoids unnecessary costs.</li>
+                        <li><strong>Use case</strong>: Save logs to Superbase or simply submit.</li>
                     </ul>
                 </div>
             </div>
