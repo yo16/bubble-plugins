@@ -23,8 +23,10 @@ jobs:
       
       - name: Check Activation Log Count
         run: |
-          curl -X GET 'https://${{ secrets.SUPABASE_PROJECT_ID }}.supabase.co/rest/v1/rpc/count_activate_log' \
+          RESPONSE=$(curl -s -X POST \
+            'https://${{ secrets.SUPABASE_PROJECT_ID }}.supabase.co/rest/v1/rpc/count_activate_log' \
             -H "apikey: ${{ secrets.SUPABASE_API_KEY }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d '{}'
+            -d '{}')
+          echo "ActivateLog count: $RESPONSE"
