@@ -1,48 +1,19 @@
 "use client";
 
 /*
-UsageSection
+CurrentUsageSection
 
-DescriptionSectionだとシンプルすぎて表現できないので、専用のUsageSectionを作成する。
-ほんとは、継承するような感じで作りたかったけど、まぁいいや。
+UsageSectionに渡すパラメータを定義し、UsageSectionを呼び出す。
 */
 
-import Image from "next/image";
 import Link from "next/link";
 
-import "./UsageSection.css";
-
-const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
-
-// Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.
-const ExternalLinkIcon = () => {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            style={{
-                width: "12px",
-                height: "12px",
-                marginLeft: "2px",
-                marginRight: "2px",
-            }}
-        >
-            <path
-                fill="#66c"
-                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
-            />
-        </svg>
-    );
-}
+import { ExternalLinkIcon } from "@/components/ExternalLinkIcon";
+import { UsageSection } from "@/components/UsageSection";
 
 
-interface UsageSectionProps {
-    title: string;
-}
-export const UsageSection = (
-    { title }: UsageSectionProps
-) => {
-    const imageWidth = 500;
+export const CurrentUsageSection = () => {
+    const title = "Plugin Configuration and Usage";
     const subSections = [
         {
             title: "1. Configuration: Add the Plugin",
@@ -142,57 +113,10 @@ export const UsageSection = (
     ];
 
     return (
-        <div
-            className="description-section"
-        >
-            <h2>{title}</h2>
-            <div
-                className="description-sub-section"
-            >
-                {subSections.map((subSection, index) => (
-                <div
-                    key={index}
-                >
-                    <h3>{subSection.title}</h3>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            gap: "30px",
-                        }}
-                    >
-                        <div>
-                            <ol>
-                                {subSection.stepDescriptions.map((description, index) => (
-                                    <li key={index}>{description}</li>
-                                ))}
-                            </ol>
-                        </div>
-                        <div
-                            style={{
-                                width: imageWidth,
-                                height: imageWidth * subSection.image.height / subSection.image.width,
-                            }}
-                        >
-                            <Link
-                                href={subSection.image.path}
-                            >
-                                <Image
-                                    src={`${imageBasePath}${subSection.image.path}`}
-                                    alt={subSection.image.alt}
-                                    width={imageWidth}
-                                    height={imageWidth * subSection.image.height / subSection.image.width}
-                                    style={{
-                                        border: "1px solid #eee",
-                                    }}
-                                />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                ))}
-            </div>
-        </div>
+        <UsageSection
+            title={title}
+            subSections={subSections}
+        />
     );
 }
 
