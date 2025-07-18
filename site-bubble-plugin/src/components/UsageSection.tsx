@@ -19,13 +19,14 @@ type SubSection = {
 }
 
 interface UsageSectionProps {
-    title: string;
+    title?: string;
     subSections: SubSection[];
 }
 
 export const UsageSection = (
     { title, subSections }: UsageSectionProps
 ) => {
+    const titleStr = title || "Plugin Configuration and Usage";
     const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
     const imageWidth = 500;
 
@@ -33,7 +34,7 @@ export const UsageSection = (
         <div
             className="description-section"
         >
-            <h2>{title}</h2>
+            <h2>{titleStr}</h2>
             <div
                 className="description-sub-section"
             >

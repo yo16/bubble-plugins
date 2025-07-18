@@ -14,7 +14,6 @@ import "./CurrentUsageSection.css";
 
 
 export const CurrentUsageSection = () => {
-    const title = "Plugin Configuration and Usage";
     const subSections = [
         {
             title: "1. Configuration: Add the Plugin",
@@ -121,7 +120,6 @@ export const CurrentUsageSection = () => {
 
     return (
         <UsageSection
-            title={title}
             subSections={subSections}
         />
     );
