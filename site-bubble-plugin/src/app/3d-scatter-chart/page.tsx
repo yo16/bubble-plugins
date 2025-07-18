@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 export default function Scatter3D() {
-    const pluginMarketplaceLink = "";
+    const pluginMarketplaceLink = "https://bubble.io/plugin/3d-scatter-chart-1751599148535x509665258380197900";
     const demoAppLiveLink = "https://plugins-demo-small-piece.bubbleapps.io/3d-scatter-chart";
     const demoAppEditorLink = "https://bubble.io/page?type=page&name=3d-scatter-chart&id=plugins-demo-small-piece&tab=tabs-1";
 
