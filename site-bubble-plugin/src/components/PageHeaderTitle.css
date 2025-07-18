@@ -12,6 +12,10 @@
     font-size: 14px;
 }
 
+.top-header-section .plugin-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
 .top-header-section .icon {
     margin-right: 3px;
 }

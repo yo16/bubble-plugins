@@ -37,8 +37,6 @@ export default function Scatter3D() {
                     image={{
                         path: `${imageBasePath}/icon_3d_scatter_chart.png`,
                         alt: "Supabase",
-                        width: 24,
-                        height: 24,
                     }}
                     descriptions={
                         [

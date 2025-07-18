@@ -10,8 +10,6 @@ interface PageHeaderTitleProps {
     image?: {
         path: string;
         alt: string;
-        width: number;
-        height: number;
     };
     descriptions?: {
         icon?: string;
@@ -21,6 +19,9 @@ interface PageHeaderTitleProps {
 }
 
 export function PageHeaderTitle({ title, image, descriptions }: PageHeaderTitleProps) {
+    const imageWidth = 52;
+    const imageHeight = 52;
+
     return (
         <div className="top-header-section">
             <h1>
@@ -28,8 +29,8 @@ export function PageHeaderTitle({ title, image, descriptions }: PageHeaderTitleP
                 <Image
                     src={image.path}
                     alt={image.alt}
-                    width={image.width}
-                    height={image.height}
+                    width={imageWidth}
+                    height={imageHeight}
                     className="plugin-icon"
                 />)}
                 {title}

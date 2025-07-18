@@ -35,8 +35,6 @@ export default function SupabaseSelector() {
                     image={{
                         path: `${imageBasePath}/icon_sb.png`,
                         alt: "Supabase",
-                        width: 24,
-                        height: 24,
                     }}
                     descriptions={
                         [
