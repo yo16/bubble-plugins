@@ -4,7 +4,6 @@
 CurrentUsageSection
 */
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { UsageSection } from "@/components/UsageSection";
@@ -16,7 +15,6 @@ import "./CurrentUsageSection.css";
 
 export const CurrentUsageSection = () => {
     const title = "Plugin Configuration and Usage";
-    const imageWidth = 500;
     const subSections = [
         {
             title: "1. Configuration: Add the Plugin",
