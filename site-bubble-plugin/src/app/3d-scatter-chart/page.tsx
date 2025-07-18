@@ -1,5 +1,6 @@
 /*
-Supabase Selector
+3d-scatter-chart
+プラグイン名: 3D-Scatter Chart
 */
 
 import Link from "next/link";
@@ -7,22 +8,23 @@ import { Metadata } from "next";
 
 import { PageHeaderTitle } from "@/components/PageHeaderTitle";
 import { DescriptionSection } from "@/components/DescriptionSection";
-import { CurrentUsageSection } from "./CurrentUsageSection";
 import { SetSections } from "@/components/SetSections";
 
-import "./pageSupabaseSelector.css";
+import { CurrentUsageSection } from "./CurrentUsageSection";
+
+import "./page.css";
 
 export const metadata: Metadata = {
-    title: "Supabase Selector - Bubble Plugins by Small Piece",
-    description: "Supabase Selector is a plugin for Bubble developers to get data from Supabase.",
+    title: "Scatter 3D - Bubble Plugins by Small Piece",
+    description: "3D-Scatter Chart is a Bubble plugin that allows you to render 3D scatter plots from point cloud data using Plotly.js.",
 };
 
 const imageBasePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
-export default function SupabaseSelector() {
-    const pluginMarketplaceLink = "https://bubble.io/plugin/supabase-selector-1749956409055x929758356949958700";
-    const demoAppLiveLink = "https://plugins-demo-small-piece.bubbleapps.io/supabase-selector";
-    const demoAppEditorLink = "https://bubble.io/page?type=page&name=supabase-selector&id=plugins-demo-small-piece&tab=tabs-1";
+export default function Scatter3D() {
+    const pluginMarketplaceLink = "";
+    const demoAppLiveLink = "https://plugins-demo-small-piece.bubbleapps.io/3d-scatter-chart";
+    const demoAppEditorLink = "https://bubble.io/page?type=page&name=3d-scatter-chart&id=plugins-demo-small-piece&tab=tabs-1";
 
     return (
         <div>
@@ -31,9 +33,9 @@ export default function SupabaseSelector() {
                 className="page-container"
             >
                 <PageHeaderTitle
-                    title="Supabase Selector"
+                    title="3D-Scatter Chart"
                     image={{
-                        path: `${imageBasePath}/icon_sb.png`,
+                        path: `${imageBasePath}/icon_3d_scatter_chart.png`,
                         alt: "Supabase",
                         width: 24,
                         height: 24,
@@ -62,10 +64,10 @@ export default function SupabaseSelector() {
                 <DescriptionSection
                     title="Service Description"
                     descriptions={[
-                        "**Supabase Selector is a plugin for Bubble developers to get data from Supabase.**",
-                        "For example, if you have a system outside Bubble that uses Supabase, **you can use this plugin to get data.**",
-                        "**It only extracts data from the database.** If your app only needs this, **you don’t have to pay extra for other features.**",
-                        "**One subscription allows you to use multiple tables.**",
+                        "**3D-Scatter Chart is a plugin for Bubble developers to visualize 3D scatter plots.**",
+                        "For example, if you have data with X, Y, and Z coordinates, **you can use this plugin to render them as interactive 3D charts.**",
+                        "**It focuses solely on 3D scatter plots.** If your app only needs this, **you don’t have to pay extra for other chart types.**",
+                        "**One subscription allows you to use it across multiple pages and data sources.**",
                         `You can see a **demo app using this plugin** [here](${demoAppLiveLink}).`,
                         `See **Bubble usage instructions** [here](${demoAppEditorLink}).`,
                     ]}
@@ -76,8 +78,8 @@ export default function SupabaseSelector() {
                 <DescriptionSection
                     title="Pricing"
                     descriptions={[
-                        "**$30** once or **$4/month**",
-                        "**Low-Cost Trial**: Subscribe to try. Cancel anytime and only pay for the days used. For example, $4/month equals **$0.13/day**."
+                        "**$19** once or **$3/month**",
+                        "**Low-Cost Trial**: Subscribe to try. Cancel anytime and only pay for the days used. For example, $3/month equals **$0.10/day**."
                     ]}
                 />
 

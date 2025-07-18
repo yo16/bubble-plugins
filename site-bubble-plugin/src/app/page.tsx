@@ -33,6 +33,7 @@ export default function Home() {
             <div
                 className="plugin-container"
             >
+                {/* Supabase Selector */}
                 <div
                     className="plugin-card"
                 >
@@ -58,6 +59,8 @@ export default function Home() {
                         <li><strong>Use case</strong>: Read Supabase data from other systems.</li>
                     </ul>
                 </div>
+
+                {/* Supabase Inserter */}
                 <div
                     className="plugin-card"
                 >
@@ -81,6 +84,33 @@ export default function Home() {
                         <li><strong>Streamlined simplicity</strong>: No unneeded features.</li>
                         <li><strong>No extra cost</strong>: Avoids unnecessary costs.</li>
                         <li><strong>Use case</strong>: Save logs to Superbase or simply submit.</li>
+                    </ul>
+                </div>
+
+                {/* 3D-Scatter Chart */}
+                <div
+                    className="plugin-card"
+                >
+                    <h2>
+                        <Link
+                            href="/3d-scatter-chart"
+                        >
+                            <Image
+                                src={`${imageBasePath}/icon_3d_scatter_chart.png`}
+                                alt="Supabase"
+                                width={24}
+                                height={24}
+                                className="plugin-icon"
+                            />
+                            3D-Scatter Chart
+                            <span style={{fontWeight: "normal"}}> - Plot 3D data easily and interactively</span>
+                        </Link>
+                    </h2>
+                    <ul>
+                        <li><strong>Easy to use</strong>: Just a few steps to display a 3D scatter plot.</li>
+                        <li><strong>3D-focused</strong>: Specialized for rendering 3D point cloud data.</li>
+                        <li><strong>Interactive view</strong>: Zoom, pan, and rotate the plot freely.</li>
+                        <li><strong>Direct from Bubble DB</strong>: Visualize data directly without code.</li>
                     </ul>
                 </div>
             </div>

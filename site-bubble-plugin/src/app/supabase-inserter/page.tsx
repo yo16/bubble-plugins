@@ -82,7 +82,7 @@ export default function SupabaseSelector() {
                 />
 
                 <SetSections
-                    imageBasePath={imageBasePath || ""}
+                    imageBasePath={imageBasePath}
                     demoAppEditorLink={demoAppEditorLink}
                 />
             </div>
