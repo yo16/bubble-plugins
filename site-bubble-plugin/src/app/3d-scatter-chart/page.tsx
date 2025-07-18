@@ -69,6 +69,12 @@ export default function Scatter3D() {
                         `You can see a **demo app using this plugin** [here](${demoAppLiveLink}).`,
                         `See **Bubble usage instructions** [here](${demoAppEditorLink}).`,
                     ]}
+                    image={{
+                        path: `${imageBasePath}/images/3d-scatter-chart/screen_movie.gif`,
+                        alt: "3D-Scatter Chart image",
+                        width: 427,
+                        height: 342,
+                    }}
                 />
 
                 <CurrentUsageSection />
