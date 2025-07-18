@@ -6,6 +6,7 @@ Each sub-section contains a title, a list of step descriptions, and an image.
 import Link from "next/link";
 import Image from "next/image";
 
+import "./UsageSection.css";
 
 type SubSection = {
     title: string;
